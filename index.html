@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infini-T AI — Generative & Agentic AI Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-symbol">∞</span>
+        <span class="logo-text">Infini-T <span class="logo-ai">AI</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact" class="nav-cta">Get Started</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#services">Services</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Get Started</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <canvas id="particleCanvas"></canvas>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        The Future of AI Consulting
+      </div>
+      <h1 class="hero-title">
+        Transform Your<br/>
+        <span class="gradient-text">Business with</span><br/>
+        Generative AI
+      </h1>
+      <p class="hero-subtitle">
+        We help forward-thinking organizations design, build, and deploy
+        cutting-edge <strong>Generative AI</strong> and <strong>Agentic AI</strong> solutions
+        that create measurable impact — fast.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">
+          Start Your AI Journey
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#solutions" class="btn-secondary">
+          See Our Solutions
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">150+</span>
+          <span class="stat-label">AI Models Deployed</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">80+</span>
+          <span class="stat-label">Enterprise Clients</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">3x</span>
+          <span class="stat-label">Avg. ROI in Year 1</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orbit-ring ring-1">
+        <div class="orbit-icon" style="--angle:0deg"><div class="icon-wrap">🤖</div></div>
+        <div class="orbit-icon" style="--angle:90deg"><div class="icon-wrap">⚡</div></div>
+        <div class="orbit-icon" style="--angle:180deg"><div class="icon-wrap">🧠</div></div>
+        <div class="orbit-icon" style="--angle:270deg"><div class="icon-wrap">🔮</div></div>
+      </div>
+      <div class="orbit-ring ring-2">
+        <div class="orbit-icon" style="--angle:45deg"><div class="icon-wrap">📊</div></div>
+        <div class="orbit-icon" style="--angle:225deg"><div class="icon-wrap">🚀</div></div>
+      </div>
+      <div class="core-orb">
+        <span class="core-symbol">∞</span>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <span>Generative AI</span><span class="ticker-dot">✦</span>
+      <span>Agentic AI Systems</span><span class="ticker-dot">✦</span>
+      <span>LLM Fine-Tuning</span><span class="ticker-dot">✦</span>
+      <span>RAG Architecture</span><span class="ticker-dot">✦</span>
+      <span>AI Automation</span><span class="ticker-dot">✦</span>
+      <span>Multi-Agent Workflows</span><span class="ticker-dot">✦</span>
+      <span>Enterprise AI Strategy</span><span class="ticker-dot">✦</span>
+      <span>AI Governance</span><span class="ticker-dot">✦</span>
+      <span>Custom AI Assistants</span><span class="ticker-dot">✦</span>
+      <span>Data Intelligence</span><span class="ticker-dot">✦</span>
+      <span>Generative AI</span><span class="ticker-dot">✦</span>
+      <span>Agentic AI Systems</span><span class="ticker-dot">✦</span>
+      <span>LLM Fine-Tuning</span><span class="ticker-dot">✦</span>
+      <span>RAG Architecture</span><span class="ticker-dot">✦</span>
+      <span>AI Automation</span><span class="ticker-dot">✦</span>
+      <span>Multi-Agent Workflows</span><span class="ticker-dot">✦</span>
+      <span>Enterprise AI Strategy</span><span class="ticker-dot">✦</span>
+      <span>AI Governance</span><span class="ticker-dot">✦</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">What We Do</div>
+        <h2>End-to-End <span class="gradient-text">AI Consulting</span></h2>
+        <p>From strategy to production — we guide every step of your AI transformation journey.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card featured-card">
+          <div class="card-glow"></div>
+          <div class="service-icon-wrap">
+            <div class="service-icon">🧠</div>
+          </div>
+          <h3>Generative AI Strategy</h3>
+          <p>We assess your organization's readiness and create a tailored GenAI roadmap — identifying the highest-value use cases, risk parameters, and deployment sequencing.</p>
+          <ul class="service-list">
+            <li>AI Readiness Assessment</li>
+            <li>Use Case Prioritization</li>
+            <li>ROI Modeling & Business Cases</li>
+            <li>Technology Stack Selection</li>
+          </ul>
+          <a href="#contact" class="card-link">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <div class="service-icon">🤖</div>
+          </div>
+          <h3>Agentic AI Development</h3>
+          <p>Build autonomous AI agents that plan, reason, and execute complex multi-step tasks — dramatically reducing manual workload.</p>
+          <ul class="service-list">
+            <li>Multi-Agent Orchestration</li>
+            <li>Tool & API Integration</li>
+            <li>Autonomous Workflow Design</li>
+          </ul>
+          <a href="#contact" class="card-link">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <div class="service-icon">🔍</div>
+          </div>
+          <h3>RAG & Knowledge Systems</h3>
+          <p>Ground your AI in your proprietary data with Retrieval-Augmented Generation — accurate, cited, and always up-to-date.</p>
+          <ul class="service-list">
+            <li>Vector Database Architecture</li>
+            <li>Knowledge Graph Integration</li>
+            <li>Document Intelligence</li>
+          </ul>
+          <a href="#contact" class="card-link">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <div class="service-icon">⚙️</div>
+          </div>
+          <h3>LLM Fine-Tuning & Training</h3>
+          <p>Adapt foundation models to your domain with custom fine-tuning, RLHF, and efficient training pipelines.</p>
+          <ul class="service-list">
+            <li>Domain-Specific Fine-Tuning</li>
+            <li>Instruction Tuning</li>
+            <li>Model Evaluation & Red-Teaming</li>
+          </ul>
+          <a href="#contact" class="card-link">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <div class="service-icon">🛡️</div>
+          </div>
+          <h3>AI Governance & Safety</h3>
+          <p>Deploy responsibly with robust guardrails, compliance frameworks, and governance policies built for enterprise scale.</p>
+          <ul class="service-list">
+            <li>AI Risk Frameworks</li>
+            <li>Responsible AI Policies</li>
+            <li>Regulatory Compliance</li>
+          </ul>
+          <a href="#contact" class="card-link">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <div class="service-icon">🚀</div>
+          </div>
+          <h3>MLOps & AI Infrastructure</h3>
+          <p>Production-grade infrastructure for reliable, scalable, and observable AI systems in the cloud or on-premise.</p>
+          <ul class="service-list">
+            <li>CI/CD for AI Pipelines</li>
+            <li>Model Monitoring & Drift Detection</li>
+            <li>Cost Optimization</li>
+          </ul>
+          <a href="#contact" class="card-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS -->
+  <section id="solutions">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Industry Solutions</div>
+        <h2>AI Tailored to <span class="gradient-text">Your Industry</span></h2>
+        <p>We bring deep domain expertise across sectors, ensuring AI implementations that actually work in the real world.</p>
+      </div>
+      <div class="solutions-tabs">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="finance">Finance</button>
+          <button class="tab-btn" data-tab="healthcare">Healthcare</button>
+          <button class="tab-btn" data-tab="retail">Retail</button>
+          <button class="tab-btn" data-tab="legal">Legal</button>
+          <button class="tab-btn" data-tab="manufacturing">Manufacturing</button>
+        </div>
+        <div class="tab-content-wrap">
+          <div class="tab-pane active" id="tab-finance">
+            <div class="tab-pane-inner">
+              <div class="tab-text">
+                <h3>Financial Services AI</h3>
+                <p>Supercharge operations, compliance, and client experiences with GenAI purpose-built for finance.</p>
+                <ul class="solution-list">
+                  <li><span class="sol-icon">💰</span> Automated report generation & analysis</li>
+                  <li><span class="sol-icon">📋</span> Intelligent compliance monitoring</li>
+                  <li><span class="sol-icon">📈</span> AI-driven investment research assistants</li>
+                  <li><span class="sol-icon">🔒</span> Real-time fraud detection agents</li>
+                  <li><span class="sol-icon">💬</span> Smart client advisory chatbots</li>
+                </ul>
+                <a href="#contact" class="btn-primary sm">Talk to a Finance AI Expert</a>
+              </div>
+              <div class="tab-visual">
+                <div class="visual-card">
+                  <div class="vc-header">
+                    <div class="vc-dots"><span></span><span></span><span></span></div>
+                    <span>Portfolio AI Agent</span>
+                  </div>
+                  <div class="vc-body">
+                    <div class="vc-line">
+                      <span class="vc-label">Risk Analysis</span>
+                      <div class="vc-bar"><div style="width:87%"></div></div>
+                      <span class="vc-pct">87%</span>
+                    </div>
+                    <div class="vc-line">
+                      <span class="vc-label">Compliance Score</span>
+                      <div class="vc-bar"><div style="width:94%"></div></div>
+                      <span class="vc-pct">94%</span>
+                    </div>
+                    <div class="vc-line">
+                      <span class="vc-label">Report Speed</span>
+                      <div class="vc-bar"><div style="width:12x%"></div></div>
+                      <span class="vc-pct">12x</span>
+                    </div>
+                    <div class="vc-metric">
+                      <div class="metric-box green">↑ 340% efficiency gain</div>
+                      <div class="metric-box blue">$2.1M saved annually</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-healthcare">
+            <div class="tab-pane-inner">
+              <div class="tab-text">
+                <h3>Healthcare AI Solutions</h3>
+                <p>Elevate clinical workflows, patient engagement, and research with responsible, HIPAA-aware AI.</p>
+                <ul class="solution-list">
+                  <li><span class="sol-icon">🏥</span> Clinical documentation automation</li>
+                  <li><span class="sol-icon">🩺</span> Intelligent diagnostic assistance</li>
+                  <li><span class="sol-icon">💊</span> Drug discovery acceleration</li>
+                  <li><span class="sol-icon">📞</span> Patient communication agents</li>
+                  <li><span class="sol-icon">📂</span> Medical records intelligence</li>
+                </ul>
+                <a href="#contact" class="btn-primary sm">Talk to a Healthcare AI Expert</a>
+              </div>
+              <div class="tab-visual">
+                <div class="visual-card">
+                  <div class="vc-header">
+                    <div class="vc-dots"><span></span><span></span><span></span></div>
+                    <span>Clinical AI Agent</span>
+                  </div>
+                  <div class="vc-body">
+                    <div class="vc-line">
+                      <span class="vc-label">Doc Accuracy</span>
+                      <div class="vc-bar"><div style="width:96%"></div></div>
+                      <span class="vc-pct">96%</span>
+                    </div>
+                    <div class="vc-line">
+                      <span class="vc-label">Time Saved</span>
+                      <div class="vc-bar"><div style="width:70%"></div></div>
+                      <span class="vc-pct">70%</span>
+                    </div>
+                    <div class="vc-metric">
+                      <div class="metric-box green">↑ Patient satisfaction +42%</div>
+                      <div class="metric-box blue">HIPAA Compliant</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-retail">
+            <div class="tab-pane-inner">
+              <div class="tab-text">
+                <h3>Retail & E-Commerce AI</h3>
+                <p>Deliver hyper-personalized shopping experiences and intelligent supply chain optimization.</p>
+                <ul class="solution-list">
+                  <li><span class="sol-icon">🛍️</span> Personalized recommendation engines</li>
+                  <li><span class="sol-icon">📦</span> Inventory intelligence agents</li>
+                  <li><span class="sol-icon">💬</span> Conversational commerce bots</li>
+                  <li><span class="sol-icon">📊</span> Demand forecasting</li>
+                  <li><span class="sol-icon">✍️</span> AI product content generation</li>
+                </ul>
+                <a href="#contact" class="btn-primary sm">Talk to a Retail AI Expert</a>
+              </div>
+              <div class="tab-visual">
+                <div class="visual-card">
+                  <div class="vc-header">
+                    <div class="vc-dots"><span></span><span></span><span></span></div>
+                    <span>Commerce AI Agent</span>
+                  </div>
+                  <div class="vc-body">
+                    <div class="vc-line">
+                      <span class="vc-label">Conversion Lift</span>
+                      <div class="vc-bar"><div style="width:35%"></div></div>
+                      <span class="vc-pct">+35%</span>
+                    </div>
+                    <div class="vc-line">
+                      <span class="vc-label">Cart Abandonment</span>
+                      <div class="vc-bar red-bar"><div style="width:28%"></div></div>
+                      <span class="vc-pct">-28%</span>
+                    </div>
+                    <div class="vc-metric">
+                      <div class="metric-box green">↑ Revenue +$4.8M</div>
+                      <div class="metric-box blue">10x faster content</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-legal">
+            <div class="tab-pane-inner">
+              <div class="tab-text">
+                <h3>Legal & Compliance AI</h3>
+                <p>Accelerate legal research, contract analysis, and compliance monitoring with precision AI agents.</p>
+                <ul class="solution-list">
+                  <li><span class="sol-icon">⚖️</span> Contract review & extraction</li>
+                  <li><span class="sol-icon">📑</span> Legal research acceleration</li>
+                  <li><span class="sol-icon">🔍</span> E-discovery automation</li>
+                  <li><span class="sol-icon">🛡️</span> Regulatory compliance agents</li>
+                  <li><span class="sol-icon">✍️</span> Document drafting assistance</li>
+                </ul>
+                <a href="#contact" class="btn-primary sm">Talk to a Legal AI Expert</a>
+              </div>
+              <div class="tab-visual">
+                <div class="visual-card">
+                  <div class="vc-header">
+                    <div class="vc-dots"><span></span><span></span><span></span></div>
+                    <span>Legal AI Agent</span>
+                  </div>
+                  <div class="vc-body">
+                    <div class="vc-line">
+                      <span class="vc-label">Review Speed</span>
+                      <div class="vc-bar"><div style="width:90%"></div></div>
+                      <span class="vc-pct">20x</span>
+                    </div>
+                    <div class="vc-line">
+                      <span class="vc-label">Accuracy</span>
+                      <div class="vc-bar"><div style="width:92%"></div></div>
+                      <span class="vc-pct">92%</span>
+                    </div>
+                    <div class="vc-metric">
+                      <div class="metric-box green">↑ Billable hours freed</div>
+                      <div class="metric-box blue">Risk reduced 60%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-manufacturing">
+            <div class="tab-pane-inner">
+              <div class="tab-text">
+                <h3>Manufacturing & Industrial AI</h3>
+                <p>Optimize production, quality control, and maintenance with intelligent AI-powered operations.</p>
+                <ul class="solution-list">
+                  <li><span class="sol-icon">🏭</span> Predictive maintenance agents</li>
+                  <li><span class="sol-icon">🔬</span> AI quality inspection systems</li>
+                  <li><span class="sol-icon">🔗</span> Supply chain optimization</li>
+                  <li><span class="sol-icon">📋</span> Intelligent process documentation</li>
+                  <li><span class="sol-icon">⚡</span> Energy optimization AI</li>
+                </ul>
+                <a href="#contact" class="btn-primary sm">Talk to a Manufacturing AI Expert</a>
+              </div>
+              <div class="tab-visual">
+                <div class="visual-card">
+                  <div class="vc-header">
+                    <div class="vc-dots"><span></span><span></span><span></span></div>
+                    <span>Industrial AI Agent</span>
+                  </div>
+                  <div class="vc-body">
+                    <div class="vc-line">
+                      <span class="vc-label">Downtime Reduction</span>
+                      <div class="vc-bar"><div style="width:67%"></div></div>
+                      <span class="vc-pct">-67%</span>
+                    </div>
+                    <div class="vc-line">
+                      <span class="vc-label">Defect Detection</span>
+                      <div class="vc-bar"><div style="width:98%"></div></div>
+                      <span class="vc-pct">98%</span>
+                    </div>
+                    <div class="vc-metric">
+                      <div class="metric-box green">↑ OEE improved 31%</div>
+                      <div class="metric-box blue">$7M cost saved</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section id="why">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-left">
+          <div class="section-tag">Why Infini-T AI</div>
+          <h2>Built by AI Experts.<br/><span class="gradient-text">Focused on Results.</span></h2>
+          <p class="why-desc">We're not a generic tech consultancy with an AI team. We are an AI-first firm, with every practitioner laser-focused on delivering transformative, production-grade GenAI solutions.</p>
+          <div class="why-points">
+            <div class="why-point">
+              <div class="wp-icon">⚡</div>
+              <div>
+                <strong>Speed to Value</strong>
+                <p>Most engagements see working prototypes in 2 weeks and production deployments in under 90 days.</p>
+              </div>
+            </div>
+            <div class="why-point">
+              <div class="wp-icon">🏆</div>
+              <div>
+                <strong>Proven Track Record</strong>
+                <p>80+ enterprise deployments across regulated industries with documented ROI and zero critical incidents.</p>
+              </div>
+            </div>
+            <div class="why-point">
+              <div class="wp-icon">🔬</div>
+              <div>
+                <strong>Research-Backed Methods</strong>
+                <p>Our team combines cutting-edge AI research with battle-tested engineering practices.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-right">
+          <div class="tech-stack">
+            <div class="ts-header">Our Technology Ecosystem</div>
+            <div class="ts-grid">
+              <div class="ts-item">
+                <span class="ts-name">OpenAI GPT-4o</span>
+              </div>
+              <div class="ts-item">
+                <span class="ts-name">Anthropic Claude</span>
+              </div>
+              <div class="ts-item">
+                <span class="ts-name">Google Gemini</span>
+              </div>
+              <div class="ts-item">
+                <span class="ts-name">Meta Llama</span>
+              </div>
+              <div class="ts-item">
+                <span class="ts-name">LangChain</span>
+              </div>
+              <div class="ts-item">
+                <span class="ts-name">LlamaIndex</span>
+              </div>
+              <div class="ts-item">
+                <span class="ts-name">Pinecone</span>
+              </div>
+              <div class="ts-item">
+                <span class="ts-name">Weaviate</span>
+              </div>
+              <div class="ts-item">
+                <span class="ts-name">AWS Bedrock</span>
+              </div>
+              <div class="ts-item">
+                <span class="ts-name">Azure OpenAI</span>
+              </div>
+              <div class="ts-item">
+                <span class="ts-name">Vertex AI</span>
+              </div>
+              <div class="ts-item">
+                <span class="ts-name">AutoGen</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">How We Work</div>
+        <h2>Our <span class="gradient-text">Proven Process</span></h2>
+        <p>A structured, transparent engagement model that takes you from concept to production.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-line"></div>
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Discovery & Strategy</h3>
+            <p>Deep-dive workshops to understand your business, data landscape, and strategic objectives. We identify the highest-value AI opportunities and build a prioritized roadmap.</p>
+            <span class="step-duration">Week 1–2</span>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Proof of Concept</h3>
+            <p>Rapid prototyping of the top use case — validating technical feasibility and business value with a working demo connected to your real data and systems.</p>
+            <span class="step-duration">Week 3–4</span>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Build & Integrate</h3>
+            <p>Full engineering sprint to build production-ready AI systems, integrate with existing tech stack, implement security and governance, and conduct rigorous testing.</p>
+            <span class="step-duration">Week 5–12</span>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>Deploy & Scale</h3>
+            <p>Production rollout with MLOps infrastructure, monitoring dashboards, team training, and ongoing optimization. We stay with you as you scale across the organization.</p>
+            <span class="step-duration">Week 12+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-wrap">
+        <div class="about-left">
+          <div class="section-tag">About Infini-T AI</div>
+          <h2>We Believe AI Should Be <span class="gradient-text">Infinite in Impact</span></h2>
+          <p>Infini-T AI was founded on a simple premise: every organization deserves access to world-class AI expertise. We bridge the gap between breakthrough AI research and real-world business impact.</p>
+          <p>Our multidisciplinary team brings together AI researchers, ML engineers, domain experts, and change management specialists — giving you a partner who speaks both the language of technology and the language of business.</p>
+          <div class="about-values">
+            <div class="value-chip">🎯 Impact-First</div>
+            <div class="value-chip">🔬 Research-Driven</div>
+            <div class="value-chip">🤝 True Partnership</div>
+            <div class="value-chip">🛡️ Responsible AI</div>
+            <div class="value-chip">⚡ Move Fast</div>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="team-card-grid">
+            <div class="team-card">
+              <div class="team-avatar" style="background: linear-gradient(135deg, #7c3aed, #4f46e5)">CEO</div>
+              <div class="team-info">
+                <strong>Leadership Team</strong>
+                <span>Former AI leads from Google, OpenAI, and top-tier consulting firms</span>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="team-avatar" style="background: linear-gradient(135deg, #0ea5e9, #06b6d4)">ENG</div>
+              <div class="team-info">
+                <strong>Engineering Team</strong>
+                <span>Senior ML engineers and AI architects with 10+ years experience</span>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="team-avatar" style="background: linear-gradient(135deg, #d97706, #f59e0b)">RES</div>
+              <div class="team-info">
+                <strong>Research Team</strong>
+                <span>PhD researchers specializing in LLMs, agents, and AI safety</span>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="team-avatar" style="background: linear-gradient(135deg, #059669, #10b981)">DOM</div>
+              <div class="team-info">
+                <strong>Domain Experts</strong>
+                <span>Industry veterans in finance, healthcare, legal, and operations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS / SOCIAL PROOF -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Client Success</div>
+        <h2>Trusted by <span class="gradient-text">Industry Leaders</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="quote-mark">"</div>
+          <p>Infini-T AI delivered an agentic compliance monitoring system in 10 weeks that our internal team had been trying to build for 2 years. The ROI was evident in the first quarter.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #7c3aed, #4f46e5)">CTO</div>
+            <div>
+              <strong>Chief Technology Officer</strong>
+              <span>Global Investment Bank</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card featured-testimonial">
+          <div class="quote-mark">"</div>
+          <p>The team at Infini-T AI doesn't just build AI — they truly understand our business. Their GenAI strategy roadmap transformed how we think about every process in the organization.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #059669, #10b981)">CPO</div>
+            <div>
+              <strong>Chief Product Officer</strong>
+              <span>Fortune 500 Healthcare Company</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="quote-mark">"</div>
+          <p>We went from AI skeptics to AI advocates in 90 days. Infini-T AI built us an intelligent document processing system that cut our contract review time by 80%.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #0ea5e9, #06b6d4)">GC</div>
+            <div>
+              <strong>General Counsel</strong>
+              <span>Top 10 Law Firm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section id="cta-banner">
+    <div class="container">
+      <div class="cta-card">
+        <div class="cta-glow"></div>
+        <div class="cta-content">
+          <h2>Ready to Unlock the <span class="gradient-text">Power of AI</span>?</h2>
+          <p>Book a free 30-minute AI strategy session with our experts. No sales pitch — just honest insights on where AI can create the most value for your organization.</p>
+          <div class="cta-actions">
+            <a href="#contact" class="btn-primary lg">
+              Book Free Strategy Session
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="mailto:hello@infinit-ai.com" class="btn-ghost">
+              hello@infinit-ai.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Get In Touch</div>
+        <h2>Start Your <span class="gradient-text">AI Transformation</span></h2>
+        <p>Tell us about your challenge and we'll reach back within 24 hours.</p>
+      </div>
+      <div class="contact-wrap">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" placeholder="Acme Corp" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Work Email</label>
+              <input type="email" id="email" placeholder="jane@acme.com" required />
+            </div>
+            <div class="form-group">
+              <label for="role">Your Role</label>
+              <select id="role">
+                <option value="">Select role...</option>
+                <option>CEO / Founder</option>
+                <option>CTO / CIO</option>
+                <option>VP / Director</option>
+                <option>Product Manager</option>
+                <option>Data / ML Engineer</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group full">
+            <label for="interest">Area of Interest</label>
+            <select id="interest">
+              <option value="">Select area...</option>
+              <option>GenAI Strategy & Roadmap</option>
+              <option>Agentic AI Development</option>
+              <option>RAG & Knowledge Systems</option>
+              <option>LLM Fine-Tuning</option>
+              <option>AI Governance & Safety</option>
+              <option>MLOps & Infrastructure</option>
+              <option>Not sure — need guidance</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label for="message">Tell Us About Your Challenge</label>
+            <textarea id="message" rows="4" placeholder="Describe your use case, current challenges, or what you're hoping to achieve with AI..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-btn">
+            Send Message
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+          </button>
+          <div id="formSuccess" class="form-success hidden">
+            ✅ Message sent! We'll be in touch within 24 hours.
+          </div>
+        </form>
+        <div class="contact-info">
+          <div class="ci-item">
+            <div class="ci-icon">📧</div>
+            <div>
+              <strong>Email</strong>
+              <span>hello@infinit-ai.com</span>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon">📅</div>
+            <div>
+              <strong>Schedule a Call</strong>
+              <span>calendly.com/infinit-ai</span>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon">⏱️</div>
+            <div>
+              <strong>Response Time</strong>
+              <span>Within 24 business hours</span>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon">🌍</div>
+            <div>
+              <strong>We Work Globally</strong>
+              <span>US, Europe, Asia Pacific</span>
+            </div>
+          </div>
+          <div class="contact-cta-box">
+            <h4>Free AI Audit</h4>
+            <p>Not sure where to start? We offer a complimentary 30-min AI opportunity assessment.</p>
+            <a href="mailto:hello@infinit-ai.com" class="btn-primary sm">Claim Your Free Audit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="logo">
+            <span class="logo-symbol">∞</span>
+            <span class="logo-text">Infini-T <span class="logo-ai">AI</span></span>
+          </a>
+          <p>Transforming organizations with Generative and Agentic AI solutions that create infinite possibilities.</p>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn" class="social-link">in</a>
+            <a href="#" aria-label="X/Twitter" class="social-link">𝕏</a>
+            <a href="#" aria-label="GitHub" class="social-link">gh</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#services">GenAI Strategy</a></li>
+            <li><a href="#services">Agentic AI</a></li>
+            <li><a href="#services">RAG Systems</a></li>
+            <li><a href="#services">LLM Fine-Tuning</a></li>
+            <li><a href="#services">AI Governance</a></li>
+            <li><a href="#services">MLOps</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Industries</h5>
+          <ul>
+            <li><a href="#solutions">Finance</a></li>
+            <li><a href="#solutions">Healthcare</a></li>
+            <li><a href="#solutions">Retail</a></li>
+            <li><a href="#solutions">Legal</a></li>
+            <li><a href="#solutions">Manufacturing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Infini-T AI. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
